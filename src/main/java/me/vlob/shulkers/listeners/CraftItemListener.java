@@ -28,7 +28,8 @@ public class CraftItemListener implements Listener {
     public void onCraft(CraftItemEvent event){
         if(!(event.getWhoClicked() instanceof Player)) return;
         ItemStack currentItem = event.getCurrentItem();
-        if(Arrays.stream(event.getInventory().getMatrix()).anyMatch(itemStack -> itemStack.hasItemMeta() && itemStack.getItemMeta().getDisplayName().equals(StringUtils.color(ConfigManager.shulkerItemName)))){
+        if(currentItem == null) return;
+        if(Arrays.stream(event.getInventory().getMatrix()).anyMatch(itemStack -> itemStack !=null && itemStack.hasItemMeta() && itemStack.getItemMeta().getDisplayName().equals(StringUtils.color(ConfigManager.shulkerItemName)))){
             event.setCancelled(true);
             event.setCurrentItem(null);
             return;
