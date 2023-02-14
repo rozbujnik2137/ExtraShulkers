@@ -1,0 +1,16 @@
+mysql:
+  host: 'localhost'
+  port: '3306'
+  username: 'root'
+  password: 'password'
+  database: 'shulkers'
+shulker:
+  item:
+    name: '&6&lExtraShulker'
+    description:
+      - '&cZajebisty shulker :)'
+    crafting:
+      pattern: 'XXX:XYX:XXX'
+      ingredients:
+        - 'X=EMERALD_BLOCK'
+        - 'Y=SHULKER_BOX'

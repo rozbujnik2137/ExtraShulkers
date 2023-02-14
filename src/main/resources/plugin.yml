@@ -1,0 +1,10 @@
+name: ExtraShulkers
+version: 0.1
+main: me.vlob.shulkers.Main
+author: vlob
+description: Plugin na powiekszonie shulker boxy!
+api-version: 1.13
+depend: [ProtocolLib]
+
+commands:
+  extrashulkers:
