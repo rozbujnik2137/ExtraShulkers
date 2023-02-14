@@ -41,7 +41,8 @@ public class Main extends JavaPlugin {
                 new BlockPlaceListener(this),
                 new InventoryCloseListener(this),
                 new BlockBreakListener(this),
-                new CraftItemListener(this));
+                new CraftItemListener(this),
+                new InventoryClickListener());
         registerCommands();
     }
 
